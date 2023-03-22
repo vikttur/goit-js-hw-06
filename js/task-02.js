@@ -6,3 +6,16 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+const listIngredientsRef = document.querySelector('#ingredients');
+
+const creatingNewIngredient =(ingredient => {
+	const ingredientRef = document.createElement('li');
+	ingredientRef.textContent = ingredient;
+	ingredientRef.classList.add('item');
+	return ingredientRef;
+});
+
+const newIngredients = ingredients.map(creatingNewIngredient);
+console.log(newIngredients);
+listIngredientsRef.append(...newIngredients);
