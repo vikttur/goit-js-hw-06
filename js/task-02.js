@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const listIngredientsRef = document.querySelector('#ingredients');
+const listIngredientsRef = document.getElementById('ingredients');
 
 const creatingNewIngredient =(ingredient => {
 	const ingredientRef = document.createElement('li');
