@@ -17,5 +17,4 @@ const creatingNewIngredient =(ingredient => {
 });
 
 const newIngredients = ingredients.map(creatingNewIngredient);
-console.log(newIngredients);
 listIngredientsRef.append(...newIngredients);
