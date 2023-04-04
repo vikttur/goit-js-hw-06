@@ -23,7 +23,7 @@ const changeInValue = value => {
 decrementButtonRef.addEventListener('click', () => changeInValue(-1));
 incrementButtonRef.addEventListener('click', () => changeInValue(1));
 
-			//=== variant3 ===
+			//=== variant3: коли крок не -1/+1 ===
 // const valueToSubtract = Number.parseFloat(decrementButtonRef.textContent);
 // const valueToAdd = Number.parseFloat(incrementButtonRef.textContent);
 

@@ -16,7 +16,7 @@ const images = [
 const galleryImagesRef = document.querySelector('.gallery');
 
 const creatingNewImages = (({ url, alt }) => {
-	const imageRef = document.innerHTML = `<li><img src="${url}" width="370" alt="${alt}"></img></li>`;
+	const imageRef = document.innerHTML = `<li><img src="${url}" width="370" alt="${alt}"></li>`;
 	return imageRef;
 });
 
