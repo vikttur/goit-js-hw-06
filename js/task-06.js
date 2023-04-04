@@ -8,6 +8,7 @@ const onInputBlur = event => {
 
 textEntryFieldRef.addEventListener('blur', onInputBlur);
 
+// При перевірці ДЗ прошу залишити коментарій по такому питанню:
 // Можна
 // target.value.length === Number(target.dataset.length)
 // Але ж довжина текста - завжди число, data-length не може бути логічним значенням чи текстом
