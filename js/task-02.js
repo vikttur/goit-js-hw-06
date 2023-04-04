@@ -9,12 +9,12 @@ const ingredients = [
 
 const listIngredientsRef = document.getElementById('ingredients');
 
-const creatingNewIngredient =(ingredient => {
+const creatingNewIngredient = ingredient => {
 	const ingredientRef = document.createElement('li');
 	ingredientRef.textContent = ingredient;
 	ingredientRef.classList.add('item');
 	return ingredientRef;
-});
+};
 
 const newIngredients = ingredients.map(creatingNewIngredient);
 listIngredientsRef.append(...newIngredients);
