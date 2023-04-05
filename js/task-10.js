@@ -24,9 +24,7 @@ const createBoxes = amount => {
 	mainBoxRef.append(...childrenOfBox);
 };
 
-const destroyBoxes = () => {
-	mainBoxRef.remove(mainBoxRef.children);
-};
+const destroyBoxes = () => mainBoxRef.innerHTML ='';
 
 createElementsRef.addEventListener('click', () => createBoxes(Number(numberOfElementsRef.value)));
 destroyElementsRef.addEventListener('click', () => destroyBoxes());
